@@ -72,6 +72,20 @@ if (addBtn) {
       cancelBtn.style.display = 'none';
     });
 
+    // Delete task
+    const deleteBtn = document.createElement("button");
+    deleteBtn.className = "delete-btn";
+    deleteBtn.textContent = "Delete";
+
+    // Add delete button to the list item
+    li.appendChild(deleteBtn);
+
+    // Delete button function
+    deleteBtn.addEventListener("click", () => {
+     li.remove();
+    });
+
+
     // allow Enter to save and Escape to cancel
     input.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') saveBtn.click();
