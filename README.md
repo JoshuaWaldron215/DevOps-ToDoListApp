@@ -16,5 +16,14 @@ Sprint 1:
     style.css:
         The style.css file sets up the layout and colors so that our page looks clean and readable.
 
+Sprint 2:
+
+    script.js:
+        Added feature to edit created tasks
+        Added feature to delete created tasks
+
+    style.css:
+        set up edit and delete buttons layout and style
+
 Additional Info:
-    More features will be included in a sprints 2-5.
+    More features will be included in a sprints 3-5.
