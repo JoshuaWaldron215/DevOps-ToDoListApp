@@ -27,7 +27,7 @@ Sprint 2:
 
 Sprint 3:
 
-    singup.html:
+    signup.html:
         Allows for users to create a new account.
 
 Additional Info:
