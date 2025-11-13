@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Create an account</h2>
+    <input type="text" id="fullName" placeholder="Full name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <input type="password" id="confirmPassword" placeholder="Confirm password">
+    <button id="signupBtn">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script>
+    const signupBtn = document.getElementById('signupBtn');
+    signupBtn.addEventListener('click', () => {
+      const name = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const pass = document.getElementById('password').value;
+      const confirm = document.getElementById('confirmPassword').value;
+
+      if (!name || !email || !pass || !confirm) {
+        alert('Please fill all fields.');
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert('Please enter a valid email.');
+        return;
+      }
+
+      if (pass.length < 6) {
+        alert('Password must be at least 6 characters');
+        return;
+      }
+
+      if (pass !== confirm) {
+        alert('Passwords do not match');
+        return;
+      }
+
+      // Demo-only: show success and go to login
+      alert('Account created (demo). You can now login.');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>
