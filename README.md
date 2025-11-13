@@ -19,11 +19,16 @@ Sprint 1:
 Sprint 2:
 
     script.js:
-        Added feature to edit created tasks
-        Added feature to delete created tasks
+        Added feature to edit created tasks.
+        Added feature to delete created tasks.
 
     style.css:
-        set up edit and delete buttons layout and style
+        set up edit and delete buttons layout and style.
+
+Sprint 3:
+
+    singup.html:
+        Allows for users to create a new account.
 
 Additional Info:
-    More features will be included in a sprints 3-5.
+    More features will be included in a sprints 4-5.
