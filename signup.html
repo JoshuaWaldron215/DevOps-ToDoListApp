@@ -9,6 +9,7 @@
 <body>
   <div class="login-container">
     <h2>Create an account</h2>
+    <p id="msg" style="color: green; font-weight: bold;"></p>
     <input type="text" id="fullName" placeholder="Full name">
     <input type="email" id="email" placeholder="Email">
     <input type="password" id="password" placeholder="Password">
@@ -46,9 +47,12 @@
       }
 
       // Demo-only: show success and go to login
-      alert('Account created (demo). You can now login.');
-      window.location.href = 'login.html';
-    });
+      document.getElementById("msg").textContent = "Account created (demo). Redirecting to login...";
+
+      setTimeout(() => {
+        window.location.href = "login.html";
+      }, 1000);
+    });  /* ← you were missing this */
   </script>
 </body>
 </html>
