@@ -30,5 +30,8 @@ Sprint 3:
     signup.html:
         Allows for users to create a new account.
 
+    login.html
+        Login now shows a clean success message and auto-redirect after a second.
+
 Additional Info:
     More features will be included in a sprints 4-5.
