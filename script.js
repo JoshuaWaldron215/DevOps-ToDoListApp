@@ -33,8 +33,14 @@ if (addBtn) {
     cancelBtn.textContent = 'Cancel';
     cancelBtn.style.display = 'none';
 
-    li.appendChild(span);
-    li.appendChild(input);
+  // checkbox for completion
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.className = 'task-checkbox';
+
+  li.appendChild(checkbox);
+  li.appendChild(span);
+  li.appendChild(input);
     li.appendChild(editBtn);
     li.appendChild(saveBtn);
     li.appendChild(cancelBtn);
@@ -85,6 +91,12 @@ if (addBtn) {
      li.remove();
     });
 
+
+    // toggle completed state when checkbox changes
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) li.classList.add('completed');
+      else li.classList.remove('completed');
+    });
 
     // allow Enter to save and Escape to cancel
     input.addEventListener('keydown', (e) => {

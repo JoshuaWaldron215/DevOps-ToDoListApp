@@ -53,3 +53,6 @@ button {
 .cancel-btn { background: #dc3545; }
 .delete-btn { padding: 6px 10px; background: #b00020; color: #fff; border: none; cursor: pointer; margin-left: 8px; }
 .delete-btn:hover { opacity: 0.9; }
+
+.task-checkbox { margin-right: 8px; }
+.completed .task-text { text-decoration: line-through; color: #888; }
