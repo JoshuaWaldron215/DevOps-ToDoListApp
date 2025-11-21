@@ -33,5 +33,13 @@ Sprint 3:
     login.html
         Login now shows a clean success message and auto-redirect after a second.
 
+Sprint 4:
+
+    script.js:
+        Added checkbox feature for completed tasks
+
+    style.css:
+        Added styling for checkbox and text after checkbox is checked.
+
 Additional Info:
-    More features will be included in a sprints 4-5.
+    More features will be included in a sprints 5-6.
