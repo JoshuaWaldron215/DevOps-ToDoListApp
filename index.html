@@ -11,9 +11,25 @@
     <h1>My ToDo List</h1>
   </header>
   <main>
-    <input type="text" id="newTask" placeholder="Add a new task...">
-    <button id="addTask">Add</button>
+    <div class="input-container">
+      <input type="text" id="newTask" placeholder="Add a new task...">
+      <button id="addTask">Add Task</button>
+    </div>
+    <div class="stats-container">
+      <div class="stats">
+        <span id="taskCount">0 tasks</span>
+        <span id="completedCount">0 completed</span>
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+    </div>
     <ul id="taskList"></ul>
+    <div id="emptyState" class="empty-state">
+      <p>✨ No tasks yet. Add one above to get started!</p>
+    </div>
   </main>
   <script src="script.js"></script>
 </body>
